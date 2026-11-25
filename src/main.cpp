@@ -1,12 +1,13 @@
 #include <Arduino.h>
 #include "test_mpu.h"
+#include "test_motor.h"
 
 void setup() 
 {
-  setupMpuTest();
+  setupMotorTest();
 }
 
 void loop()
 {
-  loopMpuTest();
+  loopMotorTest();
 }

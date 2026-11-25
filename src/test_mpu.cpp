@@ -19,7 +19,7 @@ void loopMpuTest() {
   Wire.beginTransmission(MPU_ADDR);
   Wire.write(0x3B);
   Wire.endTransmission(false);
-  Wire.requestFrom(MPU_ADDR, 6, true);
+  Wire.requestFrom((uint8_t)MPU_ADDR, (size_t)6, true);
 
   int16_t acX = Wire.read() << 8 | Wire.read();
   int16_t acY = Wire.read() << 8 | Wire.read();
